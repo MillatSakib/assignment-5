@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -10,7 +11,50 @@
 
 <body>
 
+
+
+
+    <!-- This is Next Button for submission -->
+    <button class="btn bg-green-500 font-semibold text-white px-44 pt-2 pb-2 text-2xl hover:bg-green-600 rounded-2xl"
+        onclick="my_modal_5.showModal()">Next</button>
+    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+            <h3 class="text-lg flex justify-center"><img src="./images/success.png" class=" w-24 h-24">
+            </h3>
+            <div class="text-green-500 flex justify-center font-bold">SUCCESS</div>
+            <div><br>
+                <span class="py-4 text-center font-semibold block mb-0">Thank you for Booking our Bus Seats. We are
+                    working<br>hard
+                    to
+                    find the best
+                    service and
+                    deals for you.</span>
+                <span class="py-4 text-center block mt-0">Shortly you will find a cofirmation in your email.</span>
+            </div>
+
+            <div class="modal-action justify-center">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <div>
+                        <button class=" btn bg-green-500 text-white px-16 pt-2 pb-2 text-base hover:bg-green-600
+                        rounded-full mx-auto">Continue</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </dialog>
+
+
+
+
+
+
+
+
+
+
     <!-- Here I add all js file -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="script.js"></script>
 </body>
 
