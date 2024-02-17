@@ -1,0 +1,12 @@
+.nav_button {
+  color: rgb(0, 196, 0);
+  background-color: rgba(16, 196, 16, 0.096);
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  display: flex;
+  border: 1px solid green;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
