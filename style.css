@@ -10,3 +10,73 @@
   align-items: center;
   justify-content: center;
 }
+#buy_ticket_merketing {
+  border-radius: 2rem;
+  position: relative;
+  margin-bottom: 75px;
+  z-index: 5;
+}
+#buy_ticket_merketing img {
+  border-radius: 2rem;
+  width: 100%;
+  margin: 2rem auto;
+  /* opacity: 0.5; */
+
+  z-index: -999;
+}
+
+#black_shade {
+  color: white;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  border-radius: 2.7rem;
+  top: 0px;
+  left: 0px;
+}
+
+#hero_section {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  color: aliceblue;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#sales {
+  position: absolute;
+  bottom: -67px;
+  left: 0;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  height: 130px;
+  width: 100%;
+}
+
+.sales_card {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  gap: 1rem;
+  padding: 0.5rem 3rem;
+  border-radius: 0.8rem;
+  border-bottom: 2px solid green;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+#buy_ticket_merketing #sales .sales_card img {
+  width: 48px;
+  height: 45px;
+  z-index: 50;
+}
