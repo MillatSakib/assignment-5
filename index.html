@@ -23,7 +23,7 @@
                         </svg>
                     </div>
                     <ul tabindex="0"
-                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        class="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 z-50">
                         <li><a>Home</a></li>
                         <li>
                             <a>About</a>
@@ -58,7 +58,7 @@
         <div id="buy_ticket_merketing"><img src="./images/banner.png">
             <div id="black_shade"></div>
             <div id="hero_section">
-                <div class="text-6xl font-bold">End-to-End Travel with<br>
+                <div class="text-2xl sm:text-3xl md:text-6xl font-bold">End-to-End Travel with<br>
                     <div class="text-center text-green-500">P Paribahan</div>
                 </div>
                 <div class="w-[50%] my-6 max-w-[500px] text-center font-light">Yes you can run unit tests and view the
@@ -71,14 +71,14 @@
                 <div class="text-black bg-green-500 px-6 py-4 rounded-lg"><a href="#ph_paribahan">Buy Ticket</a></div>
             </div>
             <div id="sales">
-                <div class="sales_card"><img src="./images/people.png">
-                    <div><span>500K+</span><br><span>Registered user</span></div>
+                <div class="sales_card hidden md:flex"><img src="./images/people.png">
+                    <div><span class="text-2xl font-bold">500K+</span><br><span>Registered user</span></div>
                 </div>
-                <div class="sales_card"><img src="./images/ticket-cupon.png">
-                    <div><span>500K+</span><br><span>Registered user</span></div>
+                <div class="sales_card hidden md:flex"><img src="./images/ticket-cupon.png">
+                    <div><span class="text-2xl font-bold">1.7 lacks</span><br><span>Ticket sold</span></div>
                 </div>
-                <div class="sales_card"><img src="./images/stoppage.png">
-                    <div><span>500K+</span><br><span>Registered user</span></div>
+                <div class="sales_card hidden md:flex"><img src="./images/stoppage.png">
+                    <div><span class="text-2xl font-bold">80K+</span><br><span>Rental partners</span></div>
                 </div>
             </div>
         </div>
@@ -157,7 +157,16 @@
 
                                 </div>
                                 <hr class="mx-4 py-3">
+
+                                <div class="flex gap-4 justify-around">
+                                    <div class="px-6 py-4 rounded-lg bg-gray-200 mb-4">Boarding Point - Laxmipur</div>
+                                    <div class="px-6 py-4 rounded-lg bg-gray-200 mb-4">Dropping Point - Bogura</div>
+                                    <div class="px-6 py-4 rounded-lg bg-gray-200 mb-4">Est. Time - 11 Hour</div>
+
+                                </div>
                             </div>
+
+
                         </div>
                         <div><img class="h-full"><img src="./images/info-devider.png" alt=""></div>
                         <div class="text-center"><img src="./images/fare.png" class="mx-auto">
@@ -169,8 +178,8 @@
                 </div>
             </div>
 
-            <div class="flex items-center justify-center gap-5 my-14">
-                <div class="w-[48%]">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-5 mx-auto my-10 md:my-14">
+                <div class="w-90% md:w-[48%]">
                     <h4 class="text-2xl font-bold"> Select Your Seat</h4>
                     <hr class="mt-2">
                     <div class="flex justify-between mt-2">
@@ -211,7 +220,7 @@
 
 
                 </div>
-                <img src="./images/Line-1.png" class="h-full">
+                <img src="./images/Line-1.png" class="h-full hidden md:block">
                 <div class="w-[48%] flex flex-col">
                     <h4 class="text-2xl font-bold"> Select Your Seat</h4>
 
@@ -257,7 +266,7 @@
                             class="input input-bordered w-full my-3" /><br>
                     </div>
                     <button
-                        class="btn bg-green-500 font-semibold text-white px-44 pt-2 pb-2 text-2xl hover:bg-green-600 rounded-2xl"
+                        class="btn bg-green-500 font-semibold text-white w-[98%] pt-2 pb-2 text-2xl hover:bg-green-600 rounded-2xl"
                         onclick="my_modal_5.showModal()" id="next_btn" disabled>Next</button>
                     <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
                         <div class="modal-box">
@@ -290,12 +299,17 @@
                             </div>
                         </div>
                     </dialog>
-
-                    <hr>
-
-
-
-
+                    <div class="flex justify-evenly">
+                        <div><a href="#">Terms and Conditions</a>
+                            <hr>
+                            <hr>
+                        </div>
+                        <div><a href="#">Cancellation
+                                Policy</a>
+                            <hr>
+                            <hr>
+                        </div>
+                    </div>
                 </div>
             </div>
 
