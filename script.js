@@ -2,6 +2,7 @@ let totalseat = parseInt(document.getElementById('seat_avaiable').innerHTML)
 let seatTake = 0;
 let totalCost = 0;
 let grandCost = 0;
+let phone = "";
 let freeA1 = 1;
 let bookA1 = document.getElementById('A1');
 bookA1.addEventListener('click', function () {
@@ -28,6 +29,21 @@ bookA1.addEventListener('click', function () {
         grandCost = totalCost;
         document.getElementById('total_price').innerHTML = totalCost;
         document.getElementById('grand_price').innerHTML = grandCost;
+        if (seatTake < 4) {
+            document.getElementById('coupon_validation').setAttribute("disabled", "");
+        } else {
+            document.getElementById('coupon_validation').removeAttribute("disabled");
+        }
+
+
+        if (typeof (phone) === 'number' && phone > -1 && seatTake > 0 && String(document.getElementById('phone').value) !== "") {
+            document.getElementById('next_btn').disabled = false;
+        }
+        else {
+            document.getElementById('next_btn').disabled = true;
+        }
+
+
 
     }
     else {
@@ -61,6 +77,20 @@ bookA2.addEventListener('click', function () {
         grandCost = totalCost;
         document.getElementById('total_price').innerHTML = totalCost;
         document.getElementById('grand_price').innerHTML = grandCost;
+        if (seatTake < 4) {
+            document.getElementById('coupon_validation').setAttribute("disabled", "");
+        } else {
+            document.getElementById('coupon_validation').removeAttribute("disabled");
+        }
+
+        if (typeof (phone) === 'number' && phone > -1 && seatTake > 0 && String(document.getElementById('phone').value) !== "") {
+            document.getElementById('next_btn').disabled = false;
+        }
+        else {
+            document.getElementById('next_btn').disabled = true;
+        }
+
+
     }
     else {
         alert("You selcet this seat before");
@@ -93,6 +123,20 @@ bookA3.addEventListener('click', function () {
         grandCost = totalCost;
         document.getElementById('total_price').innerHTML = totalCost;
         document.getElementById('grand_price').innerHTML = grandCost;
+        if (seatTake < 4) {
+            document.getElementById('coupon_validation').setAttribute("disabled", "");
+        } else {
+            document.getElementById('coupon_validation').removeAttribute("disabled");
+        }
+
+        if (typeof (phone) === 'number' && phone > -1 && seatTake > 0 && String(document.getElementById('phone').value) !== "") {
+            document.getElementById('next_btn').disabled = false;
+        }
+        else {
+            document.getElementById('next_btn').disabled = true;
+        }
+
+
     }
     else {
         alert("You selcet this seat before");
@@ -125,6 +169,20 @@ bookA4.addEventListener('click', function () {
         grandCost = totalCost;
         document.getElementById('total_price').innerHTML = totalCost;
         document.getElementById('grand_price').innerHTML = grandCost;
+        if (seatTake < 4) {
+            document.getElementById('coupon_validation').setAttribute("disabled", "");
+        } else {
+            document.getElementById('coupon_validation').removeAttribute("disabled");
+        }
+
+        if (typeof (phone) === 'number' && phone > -1 && seatTake > 0 && String(document.getElementById('phone').value) !== "") {
+            document.getElementById('next_btn').disabled = false;
+        }
+        else {
+            document.getElementById('next_btn').disabled = true;
+        }
+
+
     }
     else {
         alert("You selcet this seat before");
@@ -157,6 +215,20 @@ bookB1.addEventListener('click', function () {
         grandCost = totalCost;
         document.getElementById('total_price').innerHTML = totalCost;
         document.getElementById('grand_price').innerHTML = grandCost;
+        if (seatTake < 4) {
+            document.getElementById('coupon_validation').setAttribute("disabled", "");
+        } else {
+            document.getElementById('coupon_validation').removeAttribute("disabled");
+        }
+
+        if (typeof (phone) === 'number' && phone > -1 && seatTake > 0 && String(document.getElementById('phone').value) !== "") {
+            document.getElementById('next_btn').disabled = false;
+        }
+        else {
+            document.getElementById('next_btn').disabled = true;
+        }
+
+
     }
     else {
         alert("You selcet this seat before");
@@ -189,6 +261,20 @@ bookB2.addEventListener('click', function () {
         grandCost = totalCost;
         document.getElementById('total_price').innerHTML = totalCost;
         document.getElementById('grand_price').innerHTML = grandCost;
+        if (seatTake < 4) {
+            document.getElementById('coupon_validation').setAttribute("disabled", "");
+        } else {
+            document.getElementById('coupon_validation').removeAttribute("disabled");
+        }
+
+        if (typeof (phone) === 'number' && phone > -1 && seatTake > 0 && String(document.getElementById('phone').value) !== "") {
+            document.getElementById('next_btn').disabled = false;
+        }
+        else {
+            document.getElementById('next_btn').disabled = true;
+        }
+
+
     }
     else {
         alert("You selcet this seat before");
@@ -221,6 +307,21 @@ bookB3.addEventListener('click', function () {
         grandCost = totalCost;
         document.getElementById('total_price').innerHTML = totalCost;
         document.getElementById('grand_price').innerHTML = grandCost;
+        if (seatTake < 4) {
+            document.getElementById('coupon_validation').setAttribute("disabled", "");
+        } else {
+            document.getElementById('coupon_validation').removeAttribute("disabled");
+        }
+
+
+        if (typeof (phone) === 'number' && phone > -1 && seatTake > 0 && String(document.getElementById('phone').value) !== "") {
+            document.getElementById('next_btn').disabled = false;
+        }
+        else {
+            document.getElementById('next_btn').disabled = true;
+        }
+
+
     }
     else {
         alert("You selcet this seat before");
@@ -253,11 +354,28 @@ bookB4.addEventListener('click', function () {
         grandCost = totalCost;
         document.getElementById('total_price').innerHTML = totalCost;
         document.getElementById('grand_price').innerHTML = grandCost;
+        if (seatTake < 4) {
+            document.getElementById('coupon_validation').setAttribute("disabled", "");
+        } else {
+            document.getElementById('coupon_validation').removeAttribute("disabled");
+        }
+
+
+        if (typeof (phone) === 'number' && phone > -1 && seatTake > 0 && String(document.getElementById('phone').value) !== "") {
+            document.getElementById('next_btn').disabled = false;
+        }
+        else {
+            document.getElementById('next_btn').disabled = true;
+        }
+
+
     }
     else {
         alert("You selcet this seat before");
     }
 })
+
+
 
 document.getElementById('coupon_validation').addEventListener('click', function () {
     let cupon = document.getElementById('cupon').value;
@@ -276,7 +394,19 @@ document.getElementById('coupon_validation').addEventListener('click', function 
         document.getElementById('cupon').value = "";
     }
 })
+if (seatTake < 4) {
+    document.getElementById('coupon_validation').setAttribute("disabled", "");
+} else {
+    document.getElementById('coupon_validation').removeAttribute("disabled");
+}
 
 
-
-
+document.getElementById('phone').addEventListener("input", function () {
+    phone = parseInt(document.getElementById('phone').value)
+    if (typeof (phone) === 'number' && phone > -1 && seatTake > 0 && String(document.getElementById('phone').value) !== "") {
+        document.getElementById('next_btn').disabled = false;
+    }
+    else {
+        document.getElementById('next_btn').disabled = true;
+    }
+})

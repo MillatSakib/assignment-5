@@ -169,7 +169,7 @@
                 </div>
             </div>
 
-            <div class="flex items-center justify-center gap-5">
+            <div class="flex items-center justify-center gap-5 my-14">
                 <div class="w-[48%]">
                     <h4 class="text-2xl font-bold"> Select Your Seat</h4>
                     <hr class="mt-2">
@@ -246,12 +246,19 @@
                             <th class="px-8 text-center">BDT <span id="grand_price">0</span></th>
                         </tr>
                     </table>
-
-
-
+                    <div class="my-5">
+                        <span class="font-bold">Passenger Name*</span>
+                        <input type="text" placeholder="Enter your name" class="input input-bordered w-full my-3" /><br>
+                        <span class="font-bold">Phone Number*</span>
+                        <input type="number" id="phone" placeholder="Enter your phone number"
+                            class="input input-bordered w-full my-3" /><br>
+                        <span class="font-bold">Email ID</span>
+                        <input type="email" placeholder="Enter your email id"
+                            class="input input-bordered w-full my-3" /><br>
+                    </div>
                     <button
                         class="btn bg-green-500 font-semibold text-white px-44 pt-2 pb-2 text-2xl hover:bg-green-600 rounded-2xl"
-                        onclick="my_modal_5.showModal()" disabled>Next</button>
+                        onclick="my_modal_5.showModal()" id="next_btn" disabled>Next</button>
                     <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
                         <div class="modal-box">
                             <h3 class="text-lg flex justify-center"><img src="./images/success.png" class=" w-24 h-24">
