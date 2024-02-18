@@ -53,7 +53,7 @@
         </div>
     </header>
     <!-- Navbar Ends Here -->
-    <main class="m-4">
+    <main class="max-w-screen-2xl mx-auto">
         <!-- Banner section starts Here -->
         <div id="buy_ticket_merketing"><img src="./images/banner.png">
             <div id="black_shade"></div>
@@ -91,7 +91,7 @@
                 <div class="flex justify-around items-center bg-yellow-400 h-56 rounded-xl w-full">
                     <div>
                         <h3 class="text-3xl font-extrabold">15% OFF</h3><span class="text-xl font-bold">on your next
-                            purchase</span><br><span class="font-light">use by January </span>
+                            purchase</span><br><span class="font-light">use by January 2024</span>
                     </div>
                     <img src="./images/cupon-devider.png" class="h-56">
                     <div>
@@ -100,12 +100,12 @@
                 </div>
                 <div class="flex justify-around items-center bg-[#F78C9C] h-56 rounded-xl w-full">
                     <div>
-                        <h3 class="text-3xl font-extrabold">15% OFF</h3><span class="text-xl font-bold">on your next
-                            purchase</span><br><span class="font-light">use by January </span>
+                        <h3 class="text-3xl font-extrabold">20% OFF</h3><span class="text-xl font-bold">on your next
+                            purchase</span><br><span class="font-light">use by January 2024</span>
                     </div>
                     <img src="./images/cupon-devider.png" class="h-56">
                     <div>
-                        <h3 class="text-3xl font-extrabold">NEW15</h3><span class="font-light">Coupon Code</span>
+                        <h3 class="text-3xl font-extrabold">Couple 20</h3><span class="font-light">Coupon Code</span>
                     </div>
                 </div>
             </div>
@@ -131,12 +131,13 @@
                         <div class=" w-[70%]">
                             <div class="flex justify-between">
                                 <div class="flex gap-4">
-                                    <div><img src="./images/bus-logo .png"></div>
+                                    <div><img src="./images/bus-logo.png"></div>
                                     <div>
                                         <h3 class="text-2xl font-bold">Greenline Paribahan</h3><span
                                             class="text-xl font-light">Coach-009-WEB ! AC_Business</span>
                                     </div>
                                 </div>
+
                                 <div
                                     class="flex items-center justify-center bg-green-100 text-green-500 px-4 font-bold">
                                     <img src="./images/seat-green.png">&nbsp;&nbsp;<span id="seat_avaiable">40</span>
@@ -168,6 +169,128 @@
                 </div>
             </div>
 
+            <div class="flex items-center justify-center gap-5">
+                <div class="w-[48%]">
+                    <h4 class="text-2xl font-bold"> Select Your Seat</h4>
+                    <hr class="mt-2">
+                    <div class="flex justify-between mt-2">
+                        <div class="flex gap-2 text-xl"><img src="./images/seat-gray.png"> Available</div>
+                        <div class="flex gap-2 font-bold text-xl"><img src="./images/seat-green-filled.png"> <span
+                                class="text-green-500">Selected</span></div>
+                    </div>
+                    <hr class="mt-3">
+
+                    <div class="flex justify-end my-6"><img src="./images/stearing.png" alt=""></div>
+                    <div class="flex justify-between">
+                        <div class="flex justify-between items-center gap-4">
+                            <div class="mx-6 text-xl font-semibold">A</div>
+                            <button id="A1" class="bg-green-50 px-10 py-3 rounded-lg font-bold">A1</button>
+                            <button id="A2" class="bg-green-50 px-10 py-3 rounded-lg font-bold">A2</button>
+                        </div>
+                        <div class="flex justify-between items-center gap-4">
+
+                            <button id="A3" class="bg-green-50 px-10 py-3 rounded-lg font-bold">A3</button>
+                            <button id="A4" class="bg-green-50 px-10 py-3 rounded-lg font-bold">A4</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between my-6">
+                        <div class="flex justify-between items-center gap-4">
+                            <div class="mx-6 text-xl font-semibold">B</div>
+                            <button id="B1" class="bg-green-50 px-10 py-3 rounded-lg font-bold">B1</button>
+                            <button id="B2" class="bg-green-50 px-10 py-3 rounded-lg font-bold">B2</button>
+                        </div>
+                        <div class="flex justify-between items-center gap-4">
+
+                            <button id="B3" class="bg-green-50 px-10 py-3 rounded-lg font-bold">B3</button>
+                            <button id="B4" class="bg-green-50 px-10 py-3 rounded-lg font-bold">B4</button>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+                <img src="./images/Line-1.png" class="h-full">
+                <div class="w-[48%] flex flex-col">
+                    <h4 class="text-2xl font-bold"> Select Your Seat</h4>
+
+
+                    <table id="tabel_manage">
+                        <tr>
+                            <th class="px-8 text-center">Seat<sup id="seat_booked"
+                                    class="bg-green-600 text-white mx-1 px-2 rounded-lg">0
+                            </th>
+                            <th class="px-8 text-center">Class</th>
+                            <th class="px-8 text-center">Price</th>
+                        </tr>
+                    </table>
+                    <hr class="my-4">
+                    <table id="tabel_manage">
+                        <tr>
+                            <th class="px-8 text-center">Total Price
+                            </th>
+                            <th class="px-8 text-center"></th>
+                            <th class="px-8 text-center">BDT <span id="total_price">0</span></th>
+                        </tr>
+                    </table>
+                    <label class="input input-bordered flex items-center justify-between gap-10" id="coupon_section">
+                        <input type="text" placeholder="Have any copupon" id="cupon" />
+                        <span class="btn btn-success text-white" id="coupon_validation">Apply</span>
+                    </label>
+                    <table id="tabel_manage">
+                        <tr>
+                            <th class="px-8 text-center">Grand Total
+                            </th>
+                            <th class="px-8 text-center"></th>
+                            <th class="px-8 text-center">BDT <span id="grand_price">0</span></th>
+                        </tr>
+                    </table>
+
+
+
+                    <button
+                        class="btn bg-green-500 font-semibold text-white px-44 pt-2 pb-2 text-2xl hover:bg-green-600 rounded-2xl"
+                        onclick="my_modal_5.showModal()" disabled>Next</button>
+                    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                        <div class="modal-box">
+                            <h3 class="text-lg flex justify-center"><img src="./images/success.png" class=" w-24 h-24">
+                            </h3>
+                            <div class="text-green-500 flex justify-center font-bold">SUCCESS</div>
+                            <div><br>
+                                <span class="py-4 text-center font-semibold block mb-0">Thank you for Booking
+                                    our Bus
+                                    Seats.
+                                    We
+                                    are
+                                    working<br>hard
+                                    to
+                                    find the best
+                                    service and
+                                    deals for you.</span>
+                                <span class="py-4 text-center block mt-0">Shortly you will find a cofirmation in
+                                    your
+                                    email.</span>
+                            </div>
+
+                            <div class="modal-action justify-center">
+                                <form method="dialog">
+                                    <div>
+                                        <button class=" btn bg-green-500 text-white px-16 pt-2 pb-2 text-base hover:bg-green-600
+                                                        rounded-full mx-auto">Continue</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </dialog>
+
+                    <hr>
+
+
+
+
+                </div>
+            </div>
 
 
 
@@ -176,38 +299,6 @@
 
 
             <!-- This is Next Button for submission -->
-            <button
-                class="btn bg-green-500 font-semibold text-white px-44 pt-2 pb-2 text-2xl hover:bg-green-600 rounded-2xl"
-                onclick="my_modal_5.showModal()">Next</button>
-            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-                <div class="modal-box">
-                    <h3 class="text-lg flex justify-center"><img src="./images/success.png" class=" w-24 h-24">
-                    </h3>
-                    <div class="text-green-500 flex justify-center font-bold">SUCCESS</div>
-                    <div><br>
-                        <span class="py-4 text-center font-semibold block mb-0">Thank you for Booking our Bus
-                            Seats.
-                            We
-                            are
-                            working<br>hard
-                            to
-                            find the best
-                            service and
-                            deals for you.</span>
-                        <span class="py-4 text-center block mt-0">Shortly you will find a cofirmation in your
-                            email.</span>
-                    </div>
-
-                    <div class="modal-action justify-center">
-                        <form method="dialog">
-                            <div>
-                                <button class=" btn bg-green-500 text-white px-16 pt-2 pb-2 text-base hover:bg-green-600
-                                    rounded-full mx-auto">Continue</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </dialog>
 
 
 
